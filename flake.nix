@@ -11,8 +11,10 @@
                 name = "hello";
                 src = self;
                 buildPhase = "gcc -o hello ./hello.c";
-                installPhase = ''mkdir -p $out/bin; 
-                install -t $out/bin hello";
+                installPhase = 
+                ''
+                mkdir -p $out/bin; 
+                install -t $out/bin hello
                 '';
             };
 
